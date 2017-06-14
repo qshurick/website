@@ -1,0 +1,10 @@
+{
+  "name": "website",
+  "version": "0.0.1",
+  "description": "Personal website",
+  "homepage": "http://alexandermalyk.com",
+  "dependencies": {
+    "express": "^4.15.3",
+    "twig": "^1.10.5"
+  }
+}
