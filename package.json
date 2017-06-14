@@ -5,6 +5,7 @@
   "homepage": "http://alexandermalyk.com",
   "dependencies": {
     "express": "^4.15.3",
+    "flex-layout-attribute": "^1.0.3",
     "twig": "^1.10.5"
   }
 }

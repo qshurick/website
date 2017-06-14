@@ -2,8 +2,36 @@
 <html>
 <head>
     <title>Alexander Malyk</title>
+    <link rel="stylesheet" href="/public/flex-layout-attribute.css">
+    <link rel="stylesheet" href="/public/styles.css">
 </head>
 <body>
-
+<article class="img-optimization" layout="columns top-top">
+    <header>
+        <h2>Image optimiser</h2>
+    </header>
+    <ul>
+        <li>
+            <article layout="row center-stretch">
+                <header layout="row center-stretch">
+                    <span>funny-image</span>
+                    <figure>
+                        <picture>
+                            <source srcset="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkTtc8P_cFIYb3iDQ7K8cAq0HiZSyCv6jS08w3qxEo4uiNKUz5Nw">
+                            <source srcset="/public/funny-image.png">
+                            <img src="/public/funny-image.png" alt="Image not found">
+                        </picture>
+                    </figure>
+                </header>
+                <ul>
+                    <li layout="row top-left"><label for="size-origin-1">Original: </label><input type="text" readonly id="size-origin-1" value="700">Kb</li>
+                    <li layout="row top-left"><label for="size-compressed-1">Compressed: </label><input type="text" readonly id="size-compressed-1" value="570">Kb</li>
+                    <li layout="row top-left"><label for="size-webp-1">WebP: </label><input type="text" readonly id="size-webp-1" value="200">Kb</li>
+                </ul>
+            </article>
+        </li>
+    </ul>
+    <footer layout="row center-center">Drag and Drop your image here</footer>
+</article>
 </body>
 </html>
