@@ -6,6 +6,7 @@
   "dependencies": {
     "express": "^4.15.3",
     "flex-layout-attribute": "^1.0.3",
+    "hover.css": "^2.2.0",
     "twig": "^1.10.5"
   },
   "scripts": {
