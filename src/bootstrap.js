@@ -11,6 +11,10 @@ function initTemplateEngine(app) {
 
 function initRoutes(app) {
     app.get("/", function(req, res){
+        res.render("main");
+    });
+
+    app.get("/tools/image-optimiser", function(req, res){
         res.render("index");
     });
 
