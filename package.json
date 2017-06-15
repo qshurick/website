@@ -7,5 +7,8 @@
     "express": "^4.15.3",
     "flex-layout-attribute": "^1.0.3",
     "twig": "^1.10.5"
+  },
+  "scripts": {
+    "start": "node index.js"
   }
 }
