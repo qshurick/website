@@ -18,6 +18,10 @@ function initRoutes(app) {
         res.render("index");
     });
 
+    app.get("/canvas", function(req, res){
+        res.render("canvas");
+    });
+
     app.get("/static", express.static(__dirname + "/../public/"));
 
     app.get('*', function(req, res){
