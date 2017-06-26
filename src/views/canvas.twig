@@ -2,6 +2,7 @@
 <html>
 <head>
     <title>Canvas</title>
+    <link rel="stylesheet" href="/public/flex-layout-attribute.css">
     <style>
         * { margin: 0; padding: 0; }
         body, head {
@@ -16,7 +17,32 @@
             margin: auto;
             position: relative;
         }
+
+        button, textarea {
+            width: 30%;
+            padding: 3%;
+            display: block;
+            position: relative;
+            margin: 2% auto 0;
+        }
+        textarea {
+            padding: 0;
+        }
+        label {
+            width: 30%;
+        }
+        input {
+            width: 60%;
+        }
+        span {
+            display: inline-block;
+            width: 150px;
+            overflow: hidden;
+            color: #2098d1;
+        }
+
     </style>
+    <script src="/public/planets.js"></script>
     <script src="/public/canvas.js"></script>
 </head>
 <body>
@@ -24,6 +50,25 @@
     <div class="wrapper">
         <canvas id="canvas" width="540" height="540"></canvas>
     </div>
+    <div>
+        <p id="red"></p>
+        <p id="green"></p>
+        <p id="blue"></p>
+    </div>
+    {#<button id="clear">Clear</button>
+    <textarea name="dots" id="dots" cols="30" rows="10">
+[{"x":100,"y":100},{"x":100,"y":300},{"x":200,"y":200},{"x":100,"y":150}]
+    </textarea>
+    <button id="redraw">Redraw</button>
+    <script>
+        document.getElementById('clear').addEventListener('click', function(){
+            document.getElementById('canvas').getContext('2d').clearRect(0,0,540,540);
+        });
+        document.getElementById('redraw').addEventListener('click', function(){
+            init();
+        });
+
+    </script>#}
 </header>
 </body>
 </html>
