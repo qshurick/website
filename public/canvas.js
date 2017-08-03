@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', function () {
         requestAnimationFrame(loop);
         physics.tick(ctx, planets);
     }
-    loop();
+    // loop();
 
     // init();
 });

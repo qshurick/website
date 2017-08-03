@@ -22,7 +22,7 @@ function initRoutes(app) {
         res.render("canvas");
     });
 
-    app.get("/static", express.static(__dirname + "/../public/"));
+    app.get("/public/*", express.static(__dirname + "/.."));
 
     app.get('*', function(req, res){
         console.log('404ing');
