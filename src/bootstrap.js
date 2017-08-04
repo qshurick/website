@@ -18,9 +18,11 @@ function initRoutes(app) {
         res.render("index");
     });
 
+
     app.get("/canvas", function(req, res){
         res.render("canvas");
     });
+
 
     app.get("/public/*", express.static(__dirname + "/.."));
 
