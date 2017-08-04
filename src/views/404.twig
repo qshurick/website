@@ -15,7 +15,23 @@
             background-repeat: no-repeat;
             background-size: contain;
         }
+        a {
+            color: whitesmoke;
+            position: absolute;
+            bottom: 10vh;
+            left: 77vw;
+        }
     </style>
+
 </head>
-<body></body>
+<body>
+<a href="#" id="back">← go back</a>
+<script>
+    document.getElementById("back").addEventListener("click", function(event) {
+        event.preventDefault();
+        window.history.back();
+        return false;
+    })
+</script>
+</body>
 </html>
